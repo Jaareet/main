@@ -1,0 +1,124 @@
+@font-face {
+    font-family: SegoeUI;
+    src: local("Segoe UI Bold"), url("../fonts/segoeuib.ttf") format("truetype");
+}
+
+body {
+    font-family: SegoeUI;
+    color: #000;
+    background-image: url("../images/background.png");
+    background-size: 30%;
+}
+
+* {
+    overflow-x: auto;
+    outline: none;
+    padding: 0;
+    margin: 1;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%,-50%) scale(1);
+    left: 50%;
+    top: 50%;
+    background-color: #000;
+    box-shadow: 0 0 2.5vw skyblue, 0 0 0 .2vw #FFF, 0 0 1vw skyblue;
+    border-radius: .2vw;
+    min-width: fit-content;
+    max-width: fit-content;
+    min-height : fit-content;
+    padding: 1vw;
+    animation: show .5s ease-in-out;
+}
+
+.container > .title {
+    font-family: SegoeUI;
+    font-size: 1.5vw;
+    padding: .5vw;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 .5vw #fff;
+    color: #fff;
+}
+
+.container > .title > hr {
+    border: 0;
+    height: .2vw;
+    border-radius: .2vw;
+    background-color: #fff;
+}
+
+.container > .buttons > button {
+    font-family: SegoeUI;
+    font-size: 1vw;
+    text-align: left;
+    text-shadow: 0 0 .5vw #0000006b;
+    color: #000;
+    background-color: #FFFF;
+    box-shadow: 0 0 .5vw #FFF, 0 0 .7vw #FFF, 0 0 .2vw #FFF;
+    border: none;
+    border-radius: .3vw;
+    padding: .5vw;
+    margin: .5vw;
+    overflow-y: auto;
+    transition: .2s;
+}
+
+.container > .buttons > hr {
+    border: 0;
+    height: .1vw;
+    border-radius: .2vw;
+    background-color: rgba(255, 255, 255, 0.564);
+}
+
+.container > .buttons > button:hover {
+    transition: .5s;
+    background-color: #272727;
+    box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
+    color: #fff;
+}
+
+.container > .buttons > button:active {
+    transition: .5s;
+    transform: scale(.9);
+    background-color: #272727;
+    box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
+    color: #fff;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+::-webkit-scrollbar {
+    width: .2vw;
+    border-radius: .2vw;
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+}
+::-webkit-scrollbar-thumb:hover {
+    transition: .5s;
+    background-color: #272727;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #FFF;
+}
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+::-webkit-scrollbar-track:hover {
+    background-color: #000;
+}
+::-webkit-scrollbar-track:active {
+    background-color: #000;
+}

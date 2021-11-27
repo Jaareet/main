@@ -19,7 +19,6 @@ Link's Posted in the web
 |FiveZone|[Discord](https://discord.gg/cHuAvd29y5)|Comming Soon...|
 |La JerarquiaRP|[Discord](https://discord.gg/lajerarquiarp)|Roleplay Server ON|
 |BalladosRP|[Discord](https://discord.gg/hRcPqhPjMb)|Comming Soon...|
-|La Isla Community|[Discord](https://discord.gg/yGg3Qr3jJ6)|Roleplay Server ON|
 <hr width = "500vw">
                     
 <h4>PREVIEW</h4>  

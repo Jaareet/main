@@ -18,7 +18,6 @@ Link's Posted in the web
 |My Github Profile|[Github](https://github.com/Jaareet)|My github|
 |FiveZone|[Discord](https://discord.gg/cHuAvd29y5)|Comming Soon...|
 |La JerarquiaRP|[Discord](https://discord.gg/lajerarquiarp)|Roleplay Server ON|
-|BalladosRP|[Discord](https://discord.gg/hRcPqhPjMb)|Comming Soon...|
 <hr width = "500vw">
                     
 <h4>PREVIEW</h4>  

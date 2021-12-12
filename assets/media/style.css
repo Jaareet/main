@@ -10,6 +10,12 @@ body {
     background-size: 30%;
 }
 
+
+body a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 * {
     overflow-x: auto;
     outline: none;

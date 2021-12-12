@@ -11,7 +11,7 @@ body {
 }
 
 
-body a {
+a {
     text-decoration: none;
     color: currentColor;
 }

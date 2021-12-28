@@ -1,13 +1,26 @@
 @font-face {
-    font-family: SegoeUI;
-    src: local("Segoe UI Bold"), url("../fonts/segoeuib.ttf") format("truetype");
+    font-family: --j;
+    src: url("../fonts/VisbyCF-Medium.otf");
 }
 
 body {
-    font-family: SegoeUI;
-    color: #000;
-    background-image: url("../images/background.png");
-    background-size: 30%;
+    font-family: --j;
+    background-color: #202020;
+    color: currentColor;
+    overflow: hidden;
+}
+
+.info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: .5vw;
+    box-shadow: 0 0 .5vw rgba(0, 0, 0, .2), 0 0 .3vw rgba(0, 0, 0, .2), 0 0 .5vw rgba(0, 0, 0, .2);
+    width: 80%;
+    height: 80%;
 }
 
 
@@ -28,21 +41,17 @@ a {
     transform: translate(-50%,-50%) scale(1);
     left: 50%;
     top: 50%;
-    background-color: #000;
-    box-shadow: 0 0 2.5vw skyblue, 0 0 0 .2vw #FFF, 0 0 1vw skyblue;
     border-radius: .2vw;
-    min-width: fit-content;
-    max-width: fit-content;
-    min-height : fit-content;
-    padding: 1vw;
+    width: 80%;
+    padding: 5vw;
     animation: show .5s ease-in-out;
 }
 
 .container > .title {
-    font-family: SegoeUI;
-    font-size: 1.5vw;
+    position: relative;
+    top: -5vw;
+    font-size: 2vw;
     padding: .5vw;
-    text-transform: uppercase;
     text-align: center;
     text-shadow: 0 0 .5vw #fff;
     color: #fff;
@@ -52,17 +61,18 @@ a {
     border: 0;
     height: .2vw;
     border-radius: .2vw;
+    width: 50%;
     background-color: #fff;
 }
 
 .container > .buttons > button {
-    font-family: SegoeUI;
     font-size: 1vw;
     text-align: left;
     text-shadow: 0 0 .5vw #0000006b;
     color: #000;
-    background-color: #FFFF;
-    box-shadow: 0 0 .5vw #FFF, 0 0 .7vw #FFF, 0 0 .2vw #FFF;
+    background-color: rgba(255, 200,255,.2);
+    color: #ccc;
+    box-shadow: 0 0 .5vw rgba(255, 200,255,.2), 0 0 .7vw rgba(255, 200,255,.2), 0 0 .2vw rgba(255, 200,255,.2);
     border: none;
     border-radius: .3vw;
     padding: .5vw;
@@ -80,7 +90,8 @@ a {
 
 .container > .buttons > button:hover {
     transition: .5s;
-    background-color: #272727;
+    background-color: rgba(0, 255, 255, .8);
+    /* background-color: #272727; */
     box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
     color: #fff;
 }
@@ -89,18 +100,18 @@ a {
     transition: .5s;
     transform: scale(.9);
     background-color: #272727;
-    box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
+    /* box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue; */
     color: #fff;
 }
 
 @keyframes show {
     0% {
         opacity: 0;
-        transform: translate(-50%,-50%) scale(1.5);
+        /* transform: translate(-50%,-50%) scale(1.5); */
     }
     100% {
         opacity: 1;
-        transform: translate(-50%,-50%) scale(1);
+        /* transform: translate(-50%,-50%) scale(1); */
     }
 }
 
@@ -129,172 +140,148 @@ a {
     background-color: #000;
 }
 
+.texto-central {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    color: #ccc;
+    text-align: center;
+    font-size: 2vw;
+}
 
-@media only screen and (max-width: 812px) {
-    body {
-        overflow: hidden;
-    }
-    a {
-        text-decoration: none;
-        color: currentColor;
-    }
-    .container {
-        position: absolute;
-        transform: translate(-50%,-50%) scale(1);
-        left: 50%;
-        top: 50%;
-        background-color: #000;
-        box-shadow: 0 0.5vw skyblue, 0 0 0 .2vw #FFF, 0 0 5vw skyblue,0 0 5vw skyblue,0 0 5vw skyblue;
-        border-radius: 2vw;
-        padding: 5vw;
-        animation: show .5s ease-in-out;
-    }
-        
-    .container > .title {
-        font-family: SegoeUI;
-        font-size: 5vw;
-        padding: .5vw;
-        text-transform: uppercase;
-        text-align: center;
-        text-shadow: 0 0 .5vw #fff;
-        color: #fff;
-    }
-
-    .container > .title > hr {
-        border: 0;
-        height: .2vw;
-        border-radius: .2vw;
-        background-color: #fff;
-    }
-
-    .container > .buttons > button {
-        font-family: SegoeUI;
-        font-size: 3vw;
-        text-align: left;
-        text-shadow: 0 0 .5vw #0000006b;
-        color: #000;
-        background-color: #FFFF;
-        box-shadow: 0 0 .5vw #FFF, 0 0 .7vw #FFF, 0 0 .2vw #FFF;
-        border: none;
-        border-radius: 1vw;
-        padding: 1vw;
-        margin: 2vw;
-        overflow-y: auto;
-        transition: .2s;
-    }
-
-    .container > .buttons > hr {
-        border: 0;
-        height: .1vw;
-        border-radius: .2vw;
-        background-color: rgba(255, 255, 255, 0.564);
-    }
-
-    .container > .buttons > button:hover {
-        transition: .5s;
-        background-color: #272727;
-        box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
-        color: #fff;
-    }
-
-    .container > .buttons > button:active {
-        transition: .5s;
-        transform: scale(.9);
-        background-color: #272727;
-        box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
-        color: #fff;
-    }
+.loading-svg {
+    position: absolute;
+    width: 10%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    left: 50%;
 }
 
 
-@media only screen and (max-height: 375px) {
+
+@media only screen and (max-width: 375px) {
     body {
-        font-family: SegoeUI;
-        color: #000;
-        background-image: url("../images/background.png");
-        background-size: 30%;
+        font-family: --j;
+        background-color: #202020;
+        color: currentColor;
+        overflow: hidden;
     }
-
-
+    
+    .info {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 5vw;
+        box-shadow: 0 0 .5vw rgba(0, 0, 0, .2), 0 0 .3vw rgba(0, 0, 0, .2), 0 0 .5vw rgba(0, 0, 0, .2);
+        width: 80%;
+        height: 80%;
+    }
+    
+    
     a {
         text-decoration-line: none;
         color: currentColor;
     }
-
+    
     * {
-        overflow-x: auto;
+        overflow-x: hidden;
         outline: none;
         padding: 0;
         margin: 1;
     }
-
+    
     .container {
         position: absolute;
-        transform: translate(-50%,-50%) scale(1);
+        transform: translate(-50%,-50%);
         left: 50%;
         top: 50%;
-        background-color: #000;
-        box-shadow: 0 0 2.5vw skyblue, 0 0 0 .2vw #FFF, 0 0 1vw skyblue;
-        border-radius: 1vw;
-        min-width: fit-content;
-        max-width: fit-content;
-        min-height : fit-content;
-        padding: 2vw 1vw;
+        border-radius: 2vw;
+        height: 70%;
+        width: 80%;
+        padding: 8vw;
         animation: show .5s ease-in-out;
     }
-
+    
     .container > .title {
-        font-family: SegoeUI;
-        font-size: 2vw;
+        position: relative;
+        top: -5vw;
+        font-size: 8vw;
         padding: .5vw;
-        text-transform: uppercase;
         text-align: center;
         text-shadow: 0 0 .5vw #fff;
         color: #fff;
     }
-
+    
     .container > .title > hr {
         border: 0;
-        height: .2vw;
+        height: 1vw;
         border-radius: .2vw;
+        width: 100%;
         background-color: #fff;
     }
-
+    
     .container > .buttons > button {
-        font-family: SegoeUI;
-        font-size: 1.4vw;
+        width: max-content;
+        font-size: 6.5vw;
         text-align: left;
         text-shadow: 0 0 .5vw #0000006b;
         color: #000;
-        background-color: #FFFF;
-        box-shadow: 0 0 .5vw #FFF, 0 0 .7vw #FFF, 0 0 .2vw #FFF;
+        background-color: rgba(255, 200,255,.2);
+        color: #ccc;
+        box-shadow: 0 0 .5vw rgba(255, 200,255,.2), 0 0 .7vw rgba(255, 200,255,.2), 0 0 .2vw rgba(255, 200,255,.2);
         border: none;
-        border-radius: .5vw;
-        padding: .5vw;
-        margin: .7vw;
+        border-radius: 2.5vw;
+        padding: 3vw;
+        margin: 2vw;
+        margin-top: 5vw;
         overflow-y: auto;
         transition: .2s;
     }
-
+    
     .container > .buttons > hr {
         border: 0;
         height: .1vw;
         border-radius: .2vw;
         background-color: rgba(255, 255, 255, 0.564);
     }
-
+    
     .container > .buttons > button:hover {
         transition: .5s;
-        background-color: #272727;
+        background-color: rgba(0, 255, 255, .8);
+        /* background-color: #272727; */
         box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
         color: #fff;
     }
-
+    
     .container > .buttons > button:active {
         transition: .5s;
         transform: scale(.9);
         background-color: #272727;
-        box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
+        /* box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue; */
         color: #fff;
     }
+
+    .texto-central {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        color: #ccc;
+        text-align: center;
+        font-size: 6vw;
+        width: 80%;
+    }
+    
+    .loading-svg {
+        position: absolute;
+        width: 30%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        left: 50%;
+    }
+    
 }

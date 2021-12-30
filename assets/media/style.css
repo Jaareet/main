@@ -159,6 +159,42 @@ a {
 }
 
 
+.button-back > .buttons > button {
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1vw;
+    text-align: left;
+    text-shadow: 0 0 .5vw #0000006b;
+    color: #000;
+    background-color: rgba(255, 200,255,.2);
+    color: #ccc;
+    box-shadow: 0 0 .5vw rgba(255, 200,255,.2), 0 0 .7vw rgba(255, 200,255,.2), 0 0 .2vw rgba(255, 200,255,.2);
+    border: none;
+    border-radius: .3vw;
+    padding: .5vw;
+    margin: .5vw;
+    overflow-y: auto;
+    transition: .2s;
+}
+
+.button-back > .buttons > button:hover {
+    transition: .5s;
+    background-color: rgba(0, 255, 255, .8);
+    /* background-color: #272727; */
+    box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
+    color: #fff;
+}
+
+.button-back > .buttons > button:active {
+    transition: .5s;
+    transform: scale(.9) translateX(-50%);
+    background-color: #272727;
+    /* box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue; */
+    color: #fff;
+}
+
 
 @media only screen and (max-width: 375px) {
     body {

@@ -1,10 +1,15 @@
 @font-face {
     font-family: --j;
-    src: url("../fonts/VisbyCF-Medium.otf");
+    src: url(../fonts/Gotham-Medium.otf);
+    /* src: url("../fonts/VisbyCF-Medium.otf"); */
 }
 
-body {
+* {
     font-family: --j;
+}
+
+
+body {
     background-color: #202020;
     color: currentColor;
     overflow: hidden;

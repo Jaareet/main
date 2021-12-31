@@ -28,6 +28,7 @@
 <style>
     .info-s {
         position: absolute;
+        font-size: .9vw;
         bottom: 1%;
         left: 10%;
         color: rgba(204, 204, 204, 0.356);
@@ -38,6 +39,13 @@
     .info-a:hover {
         transition: .12s;
         text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 375px) {
+        .info-s {
+            text-align: start;
+            font-size: 3.5vw;
+        }
     }
 </style>
 </html>

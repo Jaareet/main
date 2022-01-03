@@ -1,11 +1,11 @@
 @font-face {
     font-family: --j;
-    src: url(../fonts/Gotham-Medium.otf);
-    /* src: url("../fonts/VisbyCF-Medium.otf"); */
+    src: url(../fonts/Rubik-Regular.ttf);
 }
 
 * {
     font-family: --j;
+    text-shadow: .1vw .1vw .1vw #000;
 }
 
 
@@ -32,6 +32,10 @@ body {
 a {
     text-decoration-line: none;
     color: currentColor;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 * {
@@ -163,6 +167,10 @@ a {
     left: 50%;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 
 .button-back > .buttons > button {
     position: absolute;
@@ -185,6 +193,7 @@ a {
 }
 
 .button-back > .buttons > button:hover {
+    cursor: pointer;
     transition: .5s;
     background-color: rgba(0, 255, 255, .8);
     /* background-color: #272727; */
@@ -198,6 +207,36 @@ a {
     background-color: #272727;
     /* box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue; */
     color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container > .title {
+        font-size: 4vw;
+    }
+    .container > .buttons > button {
+        margin: .8vw;
+        border-radius: .5vw;
+        padding: .8vw;
+        font-size: 2vw;
+    }
+    .container > .buttons > hr {
+        height: .2vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container > .title {
+        font-size: 5vw;
+    }
+    .container > .buttons > button {
+        margin: 2vw;
+        border-radius: 1vw;
+        padding: 2vw;
+        font-size: 3vw;
+    }
+    .container > .buttons > hr {
+        height: .2vw;
+    }
 }
 
 
@@ -267,7 +306,7 @@ a {
     
     .container > .buttons > button {
         width: max-content;
-        font-size: 6.5vw;
+        font-size: 5vw;
         text-align: left;
         text-shadow: 0 0 .5vw #0000006b;
         color: #000;
@@ -275,7 +314,7 @@ a {
         color: #ccc;
         box-shadow: 0 0 .5vw rgba(255, 200,255,.2), 0 0 .7vw rgba(255, 200,255,.2), 0 0 .2vw rgba(255, 200,255,.2);
         border: none;
-        border-radius: 2.5vw;
+        border-radius: 1.5vw;
         padding: 3vw;
         margin: 2vw;
         margin-top: 5vw;

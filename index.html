@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaareet's Community</title>
-    <link rel="shortcut icon" href="assets/images/logo.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/images/webLogo.ico">
     <link rel="stylesheet" href="assets/media/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="info">
@@ -18,12 +20,15 @@
             <div class="buttons" align = "center">
                 <button><a href = "https://dsc.gg/Jaareet">Discord Community</a></button>
                 <button><a href = "https://github.com/Jaareet">Github Profile</a></button>
-                <button><a href = "monterreyacademy.html">Monterrey Academy</a></button>
-                <button><a href = "lajerarquiarp.html">La JerarquiaRP</a></button>
+                <button>
+                    <a onClick="EastwoodView()">EastwoodRP</a>
+                </button>
+                <button><a onClick="Monterrey()">Monterrey Academy</a></button>
+                <button><a onClick="JerarquiaView()">La JerarquiaRP</a></button>
             </div>
         </div>
     </div>
-        <span class="info-s">Copyright (c) Jaareet#0097 - Web en constante programacion puedes obtener mas info <a class="info-a" href="info.html">aquí</a></span>
+    <span class="info-s">Copyright (c) Jaareet#0097 - Web en constante programacion puedes obtener mas info <a class="info-a" onClick="Informacion()">aquí</a></span>
 </body>
 <style>
     .info-s {
@@ -41,10 +46,33 @@
         text-decoration: underline;
     }
 
+    @media only screen and (max-width: 768px) {
+        .info-s {
+            position: absolute;
+            bottom: 1%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+            text-align: start;
+            font-size: 2vw;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        .info-s {
+            position: absolute;
+            bottom: 1%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: max-content;
+            text-align: start;
+            font-size: 2vw;
+        }
+    }
     @media only screen and (max-width: 375px) {
         .info-s {
+            width: 80%;
             text-align: start;
-            font-size: 3.5vw;
+            font-size: 3vw;
         }
     }
 </style>

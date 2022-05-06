@@ -1,3 +1,10 @@
+$(() => {
+    $('#notify').css({'bottom': '-2%', 'opacity': '0'},0)
+    setTimeout(() => {
+        $('#notify').css({'bottom': '2%', 'opacity': '1'})
+    },2000)
+})
+
 function Web(){
     $("body").html(
         `
@@ -79,13 +86,13 @@ function Redirecting(){
     )
 }
 
-function EastwoodView(){
+function localHostView(){
     $("body").html(
         `
         <div class="info">
             <div class="container">
                 <div class="title mobile">
-                    Jaareet's Web - EastwoodRP
+                    Jaareet's Web - Heavy Project
                     <hr>
                     <div class="subtitle" style="position:absolute;left:50%;top:80%;transform:translateX(-50%);font-size: .89vw;">
                         <span class="sub">
@@ -94,11 +101,52 @@ function EastwoodView(){
                     </div>
                 </div>
                 <div class="buttons" align = "center">
-                    <button><a href = "https://discord.gg/42c3jBKwGF">Discord</a></button>
+                    <button><a href="fivem://connect/localhost:30120">Conectar</a></button>
+                    <br>
+                    <button><a href = "index.html">Volver</a></button>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media only screen and (max-width: 375px) {
+                .container .mobile {
+                    width: max-content;
+                    font-size: 4.5vw;
+                    padding: 10vw 0;
+                }
+                .subtitle {
+                    width: 70vw;
+                    margin: -5vw 0;
+                }
+                .sub {
+                    font-size: 3.5vw;
+                }
+            }
+        </style>
+        `
+    )
+}
+
+function heavyServerView(){
+    $("body").html(
+        `
+        <div class="info">
+            <div class="container">
+                <div class="title mobile">
+                    Jaareet's Web - Heavy Project
+                    <hr>
+                    <div class="subtitle" style="position:absolute;left:50%;top:80%;transform:translateX(-50%);font-size: .89vw;">
+                        <span class="sub">
+                            Estos son los servicios a los que puedes conectarte
+                        </span>
+                    </div>
+                </div>
+                <div class="buttons" align = "center">
+                    <button><a href = "https://discord.gg/kxAHGpuFMu">Discord</a></button>
                     <br>
                     <button><a onClick="Web()">Website</a></button>
                     <br>
-                    <button><a onClick="svEastwood()">Servidor</a></button>
+                    <button><a onClick="Web()">Servidor</a></button>
                     <br>
                     <button><a href = "index.html">Volver</a></button>
                 </div>
@@ -120,141 +168,6 @@ function EastwoodView(){
                 }
             }
         </style>
-        `
-    )
-}
-
-function svEastwood(){
-    $("body").html(
-        `
-        <div class="info">
-            <div class="container">
-                <div class="title mobile">
-                    Jaareet's Web - EastwoodRP
-                    <hr>
-                    <div class="subtitle" style="position:absolute;left:50%;top:80%;transform:translateX(-50%);font-size: .89vw;">
-                        <span class="sub">
-                            Estos son los servicios a los que puedes conectarte
-                        </span>
-                    </div>
-                </div>
-                <div class="buttons" align = "center">
-                    <button><a href="fivem://connect/cfx.re/join/8e6xy5">Conectarse</a></button>
-                    <br>
-                    <button><a href="https://servers.fivem.net/servers/detail/8e6xy5">Información</a></button>
-                    <br>
-                    <button><a href = "index.html">Volver</a></button>
-                </div>
-            </div>
-        </div>
-
-        <style>
-            @media only screen and (max-width: 375px) {
-                .container .mobile {
-                    width: max-content;
-                    font-size: 4.5vw;
-                    padding: 10vw 0;
-                }
-                .subtitle {
-                    width: 70vw;
-                    margin: -5vw 0;
-                }
-                .sub {
-                    font-size: 3.5vw;
-                }
-            }
-        </style>
-
-        `
-    )
-}
-
-function bandolerosView(){
-    $("body").html(
-        `
-        <div class="info">
-            <div class="container">
-                <div class="title mobile">
-                    Jaareet's Web - BandolerosRP
-                    <hr>
-                    <div class="subtitle" style="position:absolute;left:50%;top:80%;transform:translateX(-50%);font-size: .89vw;">
-                        <span class="sub">
-                            Estos son los servicios a los que puedes conectarte
-                        </span>
-                    </div>
-                </div>
-                <div class="buttons" align = "center">
-                    <button><a href = "https://discord.gg/FTpYPvJmjJ">Discord</a></button>
-                    <br>
-                    <button><a onClick="Web()">Website</a></button>
-                    <br>
-                    <button><a onClick="svBandoleros()">Servidor</a></button>
-                    <br>
-                    <button><a href = "index.html">Volver</a></button>
-                </div>
-            </div>
-        </div>
-        <style>
-            @media only screen and (max-width: 375px) {
-                .container .mobile {
-                    width: max-content;
-                    font-size: 4.5vw;
-                    padding: 10vw 0;
-                }
-                .subtitle {
-                    width: 70vw;
-                    margin: -5vw 0;
-                }
-                .sub {
-                    font-size: 3.5vw;
-                }
-            }
-        </style>
-        `
-    )
-}
-
-function svBandoleros(){
-    $("body").html(
-        `
-        <div class="info">
-            <div class="container">
-                <div class="title mobile">
-                    Jaareet's Web - BandolerosRP
-                    <hr>
-                    <div class="subtitle" style="position:absolute;left:50%;top:80%;transform:translateX(-50%);font-size: .89vw;">
-                        <span class="sub">
-                            Estos son los servicios a los que puedes conectarte
-                        </span>
-                    </div>
-                </div>
-                <div class="buttons" align = "center">
-                    <button><a href="fivem://connect/cfx.re/join/5ajlg7">Conectarse</a></button>
-                    <br>
-                    <button><a href="https://servers.fivem.net/servers/detail/5ajlg7">Información</a></button>
-                    <br>
-                    <button><a href = "index.html">Volver</a></button>
-                </div>
-            </div>
-        </div>
-
-        <style>
-            @media only screen and (max-width: 375px) {
-                .container .mobile {
-                    width: max-content;
-                    font-size: 4.5vw;
-                    padding: 10vw 0;
-                }
-                .subtitle {
-                    width: 70vw;
-                    margin: -5vw 0;
-                }
-                .sub {
-                    font-size: 3.5vw;
-                }
-            }
-        </style>
-
         `
     )
 }

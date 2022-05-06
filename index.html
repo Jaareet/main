@@ -6,42 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaareet's Community</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://rawcdn.githack.com/hung1001/font-awesome-pro-v6/18657a9/css/all.min.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="assets/images/webLogo.ico">
     <link rel="stylesheet" href="assets/media/style.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <div class="info">
-        <div class="container">
-            <div class="title">
-                Jaareet's Web
-                <hr>
-            </div>
-            <div class="buttons" align = "center">
-                <button>
-                    <a href = "https://discord.gg/efsaQ6ZwtZ">Discord Community</a>
-                </button>
-                <button>
-                    <a href = "https://github.com/Jaareet">Github Profile</a>
-                </button>
-                <button>
-                    <a onClick="EastwoodView()">EastwoodRP</a>
-                </button>
-                <button>
-                    <a onClick="bandolerosView()">BandolerosRP</a>
-                </button>
+    <body>
+        <div class="info">
+            <div class="container">
+                <div class="title">
+                    Jaareet's Web
+                    <hr>
+                </div>
+                <div class="buttons" align = "center">
+                    <button>
+                        <a href = "https://discord.gg/EhrPUjVsXX">Discord Community</a>
+                    </button>
+                    <button>
+                        <a href = "https://github.com/Jaareet">Github Profile</a>
+                    </button>
+                    <div width="500" style="margin-top: 1.5vw"></div>
+                    <br>
+                    <button>
+                        <a onClick="localHostView()">Localhost</a>
+                    </button>
+                    <button style = 'position:relative;top:-0.5vw'>
+                        <div align = 'center'>
+                            <a onClick="heavyServerView()">Heavy Project<br>Los Santos</a>
+                        </div>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <span class="info-s">Copyright (c) Jaareet#0097 - Web en constante programacion puedes obtener mas info <a class="info-a" onClick="Informacion()">aquí</a></span>
-</body>
+        <div id="notify">
+            <div id="title_" style="background-color: transparent !important;color:#fff">
+                <i class="fa-solid fa-circle-check" style="color: yellowgreen"></i> Información
+            </div>
+            <div class="message">Bienvenido a la Jaareet`s Web! <br>¡Recuerda unirte a nuestro <span style = 'color:skyblue'>Discord</span>!</div>
+        </div>
+    </body>
 <style>
     .info-s {
         position: absolute;
         font-size: .9vw;
         bottom: 1%;
         left: 10%;
-        color: rgba(204, 204, 204, 0.356);
+        color: #fff;
     }
     .info-a {
         color: skyblue;

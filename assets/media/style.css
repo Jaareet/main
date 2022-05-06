@@ -1,18 +1,44 @@
-@font-face {
-    font-family: --j;
-    src: url(../fonts/Rubik-Regular.ttf);
+* {
+    font-family: Montserrat-Regular;
+    text-shadow: .1vw .1vw .1vw #000;
+    overflow: hidden !important;
 }
 
-* {
-    font-family: --j;
-    text-shadow: .1vw .1vw .1vw #000;
+html {
+    overflow: hidden !important;
 }
 
 
 body {
-    background-color: #202020;
+    background-image: url(../images/background.jpg);
+    background-size: 100%;
     color: currentColor;
-    overflow: hidden;
+    overflow: hidden !important;
+}
+
+@font-face {
+    font-family: Montserrat-Thin;
+    src: url(../fonts/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(../fonts/Montserrat-Black.ttf);
 }
 
 .info {
@@ -21,11 +47,16 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
-    background-color: rgba(0, 0, 0, .3);
-    border-radius: .5vw;
+    border-radius: 1vw;
+    background-color: #110e1abd;
+    backdrop-filter: blur(.2vw);
     box-shadow: 0 0 .5vw rgba(0, 0, 0, .2), 0 0 .3vw rgba(0, 0, 0, .2), 0 0 .5vw rgba(0, 0, 0, .2);
     width: 80%;
     height: 80%;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
 }
 
 
@@ -62,16 +93,20 @@ a:hover {
     font-size: 2vw;
     padding: .5vw;
     text-align: center;
-    text-shadow: 0 0 .5vw #fff;
+    text-shadow: 0 0 .2vw #000;
     color: #fff;
 }
 
 .container > .title > hr {
     border: 0;
-    height: .2vw;
+    height: .1vw;
     border-radius: .2vw;
     width: 50%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.405);
+    -webkit-border-radius: .2vw;
+    -moz-border-radius: .2vw;
+    -ms-border-radius: .2vw;
+    -o-border-radius: .2vw;
 }
 
 .container > .buttons > button {
@@ -79,15 +114,18 @@ a:hover {
     text-align: left;
     text-shadow: 0 0 .5vw #0000006b;
     color: #000;
-    background-color: rgba(255, 200,255,.2);
+    background-color: #5581ef6b;
     color: #ccc;
-    box-shadow: 0 0 .5vw rgba(255, 200,255,.2), 0 0 .7vw rgba(255, 200,255,.2), 0 0 .2vw rgba(255, 200,255,.2);
     border: none;
-    border-radius: .3vw;
+    border-radius: .6vw;
     padding: .5vw;
     margin: .5vw;
     overflow-y: auto;
     transition: .2s;
+    -webkit-border-radius: .6vw;
+    -moz-border-radius: .6vw;
+    -ms-border-radius: .6vw;
+    -o-border-radius: .6vw;
 }
 
 .container > .buttons > hr {
@@ -99,9 +137,7 @@ a:hover {
 
 .container > .buttons > button:hover {
     transition: .5s;
-    background-color: rgba(0, 255, 255, .8);
-    /* background-color: #272727; */
-    box-shadow: 0 0 .5vw skyblue, 0 0 .7vw skyblue, 0 0 .2vw skyblue;
+    background-color: #5581ef;
     color: #fff;
 }
 
@@ -127,26 +163,26 @@ a:hover {
 ::-webkit-scrollbar {
     width: .2vw;
     border-radius: .2vw;
-    background-color: #000;
+    background-color: transparent !important;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #FFF;
+    background-color: transparent !important;
 }
 ::-webkit-scrollbar-thumb:hover {
     transition: .5s;
-    background-color: #272727;
+    background-color: transparent !important;
 }
 ::-webkit-scrollbar-thumb:active {
-    background-color: #FFF;
+    background-color: transparent !important;
 }
 ::-webkit-scrollbar-track {
-    background-color: #000;
+    background-color: transparent !important;
 }
 ::-webkit-scrollbar-track:hover {
-    background-color: #000;
+    background-color: transparent !important;
 }
 ::-webkit-scrollbar-track:active {
-    background-color: #000;
+    background-color: transparent !important;
 }
 
 .texto-central {
@@ -242,7 +278,7 @@ button:hover {
 
 @media only screen and (max-width: 375px) {
     body {
-        font-family: --j;
+        font-family: Montserrat-Regular;
         background-color: #202020;
         color: currentColor;
         overflow: hidden;
@@ -364,4 +400,31 @@ button:hover {
         left: 50%;
     }
     
+}
+
+#notify {
+    font-family: Montserrat-Regular;
+    font-size: .7vw;
+    color: #fff;
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    width: 13vw;
+    padding: 0.4vw;
+    background-color: #110e1aec;
+    box-shadow: 0 0 .3vw #110e1aec;
+    border-radius: .4vw;
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    -webkit-border-radius: .4vw;
+    -moz-border-radius: .4vw;
+    -ms-border-radius: .4vw;
+    -o-border-radius: .4vw;
+}
+
+.message {
+    margin-top: 0.2vw;
 }

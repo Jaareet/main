@@ -92,7 +92,7 @@ function localHostView(){
         <div class="info">
             <div class="container">
                 <div class="title mobile">
-                    Jaareet's Web - Heavy Project
+                    Jaareet's Web - Local Host
                     <hr>
                     <div class="subtitle" style="position:absolute;left:50%;top:80%;transform:translateX(-50%);font-size: .89vw;">
                         <span class="sub">

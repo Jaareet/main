@@ -83,6 +83,7 @@
         }
         body {
             background-color: #111111;
+            user-select: none;
         }
 
         .head-container {
@@ -128,6 +129,8 @@
             color: #ccc;
             font-size: .8vw;
             padding: 0.5vw;
+            max-height: 30vw;
+            overflow-y: auto;
         }
 
         .container-header {
@@ -135,6 +138,25 @@
             margin-top: 0.4vw;
             padding: 0.4vw;
             background-color: #151515;
+        }
+
+        ::-webkit-scrollbar {
+            width: .2vw;
+            border-radius: .6vw;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent !important;
+            margin-left: .7vw;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, .5);
+            border-radius: .6vw;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 1);
         }
     </style>
 </html>

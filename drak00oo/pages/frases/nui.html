@@ -6,6 +6,7 @@
     <title>Jaareet's Community - Drak00oo Frases</title>
     <script src="https://jaareet.es/utils/jquery/loader.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="https://jaareet.es/utils/fv6/css/all.css">
     <link rel="shortcut icon" href="../../../assets/images/webLogo.ico">
 </head>
     <body>
@@ -14,6 +15,14 @@
                 <span class="header">Drak00oo Frases</span>
             </div>
             <div class="container-body" style = 'animation: show .7s'></div> <!-- Load data -->
+        </div>
+        <div class="input">
+            <div class="input-flex">
+                <input type="text" placeholder="Escribe a @drak00oo" class = 'input'>
+            </div>
+            <div class="input-flex">
+                <i class="fa-brands fa-telegram" id = 'sender'></i>
+            </div>
         </div>
     </body>
 
@@ -105,6 +114,39 @@
 
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 1);
+        }
+        
+
+        .input input[type=text]{
+            font-family: Desk;
+            font-size: .7vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10%;
+            z-index: 222;
+            padding: 0.4vw;
+            width: 41.5%;
+            outline: none;
+            border: 0;
+            background-color: #40444b;
+            box-shadow: 0 0 .4vw #272727, 0 0 .4vw #272727,0 0 .4vw #272727, 0 0 .4vw #000;
+            border-radius: 0.4vw;
+            color: white;
+        }
+
+        .input-flex i {
+            position: absolute;
+            right: 27%;
+            bottom: 10%;
+            font-size: 1.5vw;
+            color: #ccc;
+            cursor: pointer;
+            transition: .7s;
+        }
+
+        .input-flex i:hover {
+            color: skyblue;
         }
     </style>
 </html>

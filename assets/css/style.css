@@ -1,0 +1,231 @@
+body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-image: url(../../assets/media/wave.svg);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    user-select: none;
+}
+
+/* Login Part */
+
+#login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.login-container img {
+    width: 150px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+.login-container {
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.login-container button {
+    font-family: 'Roboto Condensed';
+    font-size: 17px;
+    color: #fff;
+    background-color: rgba(0, 0, 295, 1);
+    border: 2px solid transparent;
+    border-radius: 100vw;
+    width: 100px;
+    height: 37px;
+    transition: .5s;
+}
+
+.login-container button:hover {
+    cursor: pointer;
+    border: .2vw solid rgba(0, 0, 295, 1);
+    background-color: rgba(0, 0, 295, 0);
+}
+
+/* Loaders */
+
+.scanner h1 {
+    color: transparent;
+    font-family: 'Roboto Condensed';
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.scanner h1::before {
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid #17FEFF;
+    overflow: hidden;
+    color: #17FEFF;
+    animation: load91371 2s linear infinite;
+}
+
+@keyframes load91371 {
+    0%, 10%, 100% {
+        width: 0;
+    }
+
+    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+        border-right-color: transparent;
+    }
+
+    11%,21%,31%,41%,51%,61%,71%,81%,91% {
+        border-right-color: #17FEFF;
+    }
+
+    60%, 80% {
+        width: 100%;
+    }
+}
+
+/* Card */
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+
+.card-header  {
+    height: 30%;
+    width: 100%;
+}
+
+.card-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-logo img{
+    position: absolute;
+    width: 25%;
+    left: 2%;
+    top: 20%;
+    border-radius: 30px;
+    border: 2px solid #fff;
+}
+
+.card-name {
+    position: absolute;
+    top: 27%;
+    left: 30%;
+    font-family: 'Roboto Condensed';
+    font-size: 14.5px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #000;
+    border: 1.5px solid #111;
+    box-shadow: 0 0 .2vw #000;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 10%;
+    /* background-color: #222; */
+    height: 50%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.card-elements {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90%;
+    width: 90%;
+    display: inline-flex;
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: normal;
+    /* justify-content: center; */
+    /* align-items: center; */ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90%;
+    width: 90%;
+    display: inline-flex;
+    overflow-x: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.elements-append {
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+    position: relative;
+    display: inline-flex;
+    width: 120px;
+    height: 40px;
+    font-family: 'Roboto Condensed';
+    color: #fff;
+    align-items: center;
+    background-color: #000;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px dashed transparent;
+    transition: .4s;
+}
+
+.elements-append:hover {
+    cursor: pointer;
+    border: 2px dashed #fff;
+}
+
+.append-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+.append-flex svg {
+    width: 60%;
+    fill: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #17FEFF;
+}
